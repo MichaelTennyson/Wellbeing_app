@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="LibraryGlideModule.basicprototype.MainActivity">
+
+    <include
+        android:id="@+id/Layout"
+        layout="@layout/toolbar"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/Layout"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="592dp"
+        android:background="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ImageView
+        android:id="@+id/Calendar"
+        android:layout_width="58dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="661dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="openCalendar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Home"
+        app:layout_constraintStart_toEndOf="@+id/Tick"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/calendar" />
+
+    <ImageView
+        android:id="@+id/Wellbeing"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="openWellbeing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Help"
+        app:layout_constraintStart_toEndOf="@+id/Home"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wellbeing" />
+
+    <ImageView
+        android:id="@+id/Tick"
+        android:layout_width="74dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="openTracker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Calendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tick" />
+
+    <ImageView
+        android:id="@+id/Home"
+        android:layout_width="67dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="openHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Wellbeing"
+        app:layout_constraintStart_toEndOf="@+id/Calendar"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/Help"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="657dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="openHelp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Wellbeing"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/help" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
