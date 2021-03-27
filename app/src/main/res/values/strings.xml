@@ -3,4 +3,10 @@
     <string name="smiling_face">Smiling Face</string>
     <string name="angry_face">Angry Face</string>
     <string name="sick_face">Sick Face</string>
+    <string name="InsertFail">Insert Failed</string>
+    <string name="InsertSucceed">Insert Sucessful</string>
+    <string name="UpdateFail">Update Failed</string>
+    <string name="UpdateComplete">Update Complete</string>
+    <string name="FailDelete">Delete failed</string>
+    <string name="CompleteDelete">Delete completed</string>
 </resources>
