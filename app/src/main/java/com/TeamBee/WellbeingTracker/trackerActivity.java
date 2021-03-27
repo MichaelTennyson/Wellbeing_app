@@ -1,14 +1,14 @@
-package com.example.basicprototype;
+package com.TeamBee.WellbeingTracker;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class CalendarActivity extends AppCompatActivity {
+public class trackerActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calendar);
+        setContentView(R.layout.activity_tracker);
     }
 }

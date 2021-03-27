@@ -1,30 +1,14 @@
-package com.example.basicprototype;
+package com.TeamBee.WellbeingTracker;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toolbar;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.View.OnClickListener;
-
-import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity{
-    //Private variables (images)
-   private ImageView calendar = findViewById(R.id.Calendar);
-   private ImageView wellbeing = findViewById(R.id.Wellbeing);
-   private ImageView tick = findViewById(R.id.Tick);
-   private ImageView home = findViewById(R.id.Home);
-   private ImageView help = findViewById(R.id.Help);
 
 
     @Override
@@ -32,8 +16,11 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        ImageView calendarButton = findViewById(R.id.Calendar);
+        ImageView wellbeingButton = findViewById(R.id.Wellbeing);
+        ImageView surveyButton = findViewById(R.id.Survey);
+        ImageView home = findViewById(R.id.Home);
+        ImageView helpButton = findViewById(R.id.Help);
 
 
     }

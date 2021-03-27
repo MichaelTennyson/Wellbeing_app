@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.basicprototype">
+    package="com.TeamBee.WellbeingTracker">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
@@ -10,12 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BasicPrototype">
-        <activity android:name="LibraryGlideModule.basicprototype.WellbeingActivity$trackerActivity"></activity>
-        <activity android:name="LibraryGlideModule.basicprototype.HelpActivity" />
-        <activity android:name="LibraryGlideModule.basicprototype.CalendarActivity" />
-        <activity android:name="LibraryGlideModule.basicprototype.WellbeingActivity" />
         <activity
-            android:name="LibraryGlideModule.basicprototype.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CalendarActivity" />
+        <activity android:name=".WellbeingActivity" />
+        <activity android:name=".trackerActivity" />
     </application>
 
 </manifest>

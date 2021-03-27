@@ -1,4 +1,4 @@
-package com.example.basicprototype;
+package com.TeamBee.WellbeingTracker;
 
 import org.junit.Test;
 

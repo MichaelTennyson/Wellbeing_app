@@ -1,4 +1,4 @@
-package com.example.basicprototype;
+package com.TeamBee.WellbeingTracker;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,5 +10,8 @@ public class WellbeingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wellbeing);
+    }
+
+    public static class trackerActivity {
     }
 }

@@ -4,11 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="LibraryGlideModule.basicprototype.CalendarActivity">
-
-    <include
-        android:id="@+id/Layout"
-        layout="@layout/toolbar"/>
+    tools:context=".CalendarActivity">
 
     <RelativeLayout
         android:id="@+id/toolbar"
@@ -40,7 +36,7 @@
         android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Home"
-        app:layout_constraintStart_toEndOf="@+id/Tick"
+        app:layout_constraintStart_toEndOf="@+id/Survey"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/calendar" />
@@ -64,7 +60,7 @@
         app:srcCompat="@drawable/wellbeing" />
 
     <ImageView
-        android:id="@+id/Tick"
+        android:id="@+id/Survey"
         android:layout_width="74dp"
         android:layout_height="59dp"
         android:layout_marginTop="660dp"

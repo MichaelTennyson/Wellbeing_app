@@ -4,15 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="LibraryGlideModule.basicprototype.WellbeingActivity">
-
-    <include
-        android:id="@+id/layout"
-        layout="@layout/toolbar"
-        android:layout_width="414dp"
-        android:layout_height="34dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-1dp" />
+    tools:context=".WellbeingActivity">
 
     <RelativeLayout
         android:id="@+id/Layout"
@@ -25,8 +17,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sad"
-        app:layout_constraintVertical_bias="1.0"
         app:layout_scrollFlags="scroll|enterAlways"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
@@ -36,63 +26,30 @@
         android:id="@+id/Sick"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="145dp"
-        android:layout_marginLeft="145dp"
-        android:layout_marginTop="59dp"
-        android:layout_marginEnd="166dp"
-        android:layout_marginRight="166dp"
-        android:layout_marginBottom="41dp"
-        app:layout_constraintBottom_toTopOf="@+id/sad"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Smile"
-        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="@string/sick_face"
         android:onClick="feeling_sick"
-        app:srcCompat="@drawable/unwell" />
+        app:srcCompat="@drawable/unwell"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="39dp" />
 
     <ImageView
         android:id="@+id/Smile"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="145dp"
-        android:layout_marginLeft="145dp"
-        android:layout_marginEnd="166dp"
-        android:layout_marginRight="166dp"
-        android:layout_marginBottom="320dp"
-        app:layout_constraintBottom_toBottomOf="@+id/sad"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:contentDescription="@string/smiling_face"
         android:onClick="feeling_happy"
-        app:srcCompat="@drawable/smiley" />
+        app:srcCompat="@drawable/smiley"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="39dp" />
 
     <ImageView
         android:id="@+id/Angry"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="180dp"
-        app:layout_constraintBottom_toBottomOf="@+id/Smile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/mad" />
-
-    <ImageView
-        android:id="@+id/sad"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="220dp"
-        app:layout_constraintBottom_toTopOf="@+id/Layout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Smile"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/unhappy" />
+        android:contentDescription="@string/angry_face"
+        app:srcCompat="@drawable/mad"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="39dp" />
 
     <ImageView
         android:id="@+id/Calendar"
@@ -108,7 +65,7 @@
         android:onClick="wellbeing_openCalendar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Home"
-        app:layout_constraintStart_toEndOf="@+id/Tick"
+        app:layout_constraintStart_toEndOf="@+id/Survey"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/calendar" />
@@ -132,7 +89,7 @@
         app:srcCompat="@drawable/wellbeing" />
 
     <ImageView
-        android:id="@+id/Tick"
+        android:id="@+id/Survey"
         android:layout_width="74dp"
         android:layout_height="59dp"
         android:layout_marginTop="660dp"
