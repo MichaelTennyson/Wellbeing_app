@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,33 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".WellbeingActivity$trackerActivity">
 
-    <Layout
-        android:id="@+id/Layout"
-        android:layout_width="410dp"
-        android:layout_height="80dp"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="583dp"
-        android:background="@android:color/holo_blue_dark"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/Tick"
-        app:layout_constraintTop_toBottomOf="@+id/Layout"
-        app:layout_constraintVertical_bias="1.0"
-        app:layout_scrollFlags="scroll|enterAlways"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-
-    </Layout>
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recylerv_view"
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
     </androidx.recyclerview.widget.RecyclerView>
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
