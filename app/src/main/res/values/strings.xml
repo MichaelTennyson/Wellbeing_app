@@ -4,9 +4,14 @@
     <string name="angry_face">Angry Face</string>
     <string name="sick_face">Sick Face</string>
     <string name="InsertFail">Insert Failed</string>
-    <string name="InsertSucceed">Insert Sucessful</string>
+    <string name="InsertSucceed">Insert Successful</string>
     <string name="UpdateFail">Update Failed</string>
     <string name="UpdateComplete">Update Complete</string>
     <string name="FailDelete">Delete failed</string>
     <string name="CompleteDelete">Delete completed</string>
+    <string name="calendar">calendar</string>
+    <string name="tracker">tracker</string>
+    <string name="help">help</string>
+    <string name="home">home</string>
+    <string name="wellbeing">wellbeing</string>
 </resources>
