@@ -21,12 +21,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
 
     //internal class that establishes the icon and icon name Recycler Ids
     public class MyViewHolder extends  RecyclerView.ViewHolder{
-        private ImageView icon;
+        private ImageView icon1;
         private TextView icon_name;
 
         public MyViewHolder(final View view){
             super(view);
-            icon = view.findViewById(R.id.image);
+            icon1 = view.findViewById(R.id.image);
             icon_name = view.findViewById(R.id.image_name);
 
         }
@@ -45,10 +45,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         //calls the getters and setters in trackerActivity
-        ImageView icon = itemList.get(position).getImage();
+        int icon1 = itemList.get(position).getImage();
         String icon_name = itemList.get(position).getImage_name();
         holder.icon_name.setText(icon_name);
-        holder.icon.setImageResource(icon);
+        holder.icon1.setImageResource(icon1);
     }
 
 

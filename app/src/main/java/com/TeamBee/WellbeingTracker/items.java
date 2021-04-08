@@ -3,7 +3,8 @@ package com.TeamBee.WellbeingTracker;
 import android.widget.ImageView;
 
 public class items {
-    private ImageView image;
+    private String image_name;
+    private int image;
 
     public String getImage_name() {
         return image_name;
@@ -13,18 +14,18 @@ public class items {
         this.image_name = image_name;
     }
 
-    private String image_name;
+
 
     public items(int image, String image_name) {
         this.image = image;
         this.image_name = image_name;
     }
 
-    public ImageView getImage() {
+    public int getImage() {
         return image;
     }
 
-    public void setImage(ImageView image) {
+    public void setImage(int image) {
         this.image = image;
     }
 }

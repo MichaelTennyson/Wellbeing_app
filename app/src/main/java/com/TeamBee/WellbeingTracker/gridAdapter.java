@@ -49,7 +49,7 @@ public class gridAdapter extends BaseAdapter {
 
 
     }
-    //the following is an array of images
+    //the following is an array of drawable IDs
     public Integer[] mThumbIDs = {
             R.drawable.mad,
             R.drawable.smiley,
