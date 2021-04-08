@@ -1,98 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
 
-    <RelativeLayout
-        android:id="@+id/Layout"
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
-        android:layout_height="83dp"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom"
-        android:background="@android:color/holo_blue_dark"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:itemIconTint="@drawable/home_selector"
+        app:itemTextColor="@drawable/home_selector"
+        android:id="@+id/bottom_nav"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_scrollFlags="scroll|enterAlways"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
 
-        <ImageView
-            android:id="@+id/Survey"
-            android:layout_width="74dp"
-            android:layout_height="59dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="13dp"
-            android:layout_marginBottom="10dp"
-            android:contentDescription="@string/app_name"
-            android:onClick="openTracker"
-            app:srcCompat="@drawable/tick" />
-
-        <ImageView
-            android:id="@+id/Calendar"
-            android:layout_width="58dp"
-            android:layout_height="55dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="6dp"
-            android:layout_marginLeft="6dp"
-            android:layout_marginBottom="15dp"
-            android:layout_toEndOf="@+id/Survey"
-            android:layout_toRightOf="@+id/Survey"
-            android:contentDescription="@string/app_name"
-            android:onClick="openCalendar"
-            app:srcCompat="@drawable/calendar" />
-
-        <ImageView
-            android:id="@+id/Home"
-            android:layout_width="67dp"
-            android:layout_height="61dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="17dp"
-            android:layout_marginLeft="17dp"
-            android:layout_marginBottom="11dp"
-            android:layout_toEndOf="@+id/Calendar"
-            android:layout_toRightOf="@+id/Calendar"
-            android:contentDescription="@string/app_name"
-            android:onClick="openHome"
-            app:srcCompat="@drawable/home" />
-
-        <ImageView
-            android:id="@+id/Wellbeing"
-            android:layout_width="62dp"
-            android:layout_height="56dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginBottom="14dp"
-            android:layout_toEndOf="@+id/Home"
-            android:layout_toRightOf="@+id/Home"
-            android:contentDescription="@string/app_name"
-            android:onClick="openWellbeing"
-            app:srcCompat="@drawable/wellbeing" />
-
-        <ImageView
-            android:id="@+id/Help"
-            android:layout_width="51dp"
-            android:layout_height="58dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="13dp"
-            android:layout_toEndOf="@+id/Wellbeing"
-            android:layout_toRightOf="@+id/Wellbeing"
-            android:contentDescription="@string/app_name"
-            android:onClick="openHelp"
-            app:srcCompat="@drawable/help" />
-    </RelativeLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
