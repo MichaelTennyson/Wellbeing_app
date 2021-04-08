@@ -1,12 +1,18 @@
 package com.TeamBee.WellbeingTracker;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ImageView;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 
@@ -21,9 +27,47 @@ public class trackerActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler_view);
         itemList = new ArrayList<>();
 
-
         setItemInfo();
         setAdapter();
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav);
+
+        //setting Tracker as selected
+        bottomNavigationView.setSelectedItemId(R.id.Tracker);
+
+        //Item Selected Listener
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                //Switch statement that creates intent for each activity when the button is selected
+                switch (item.getItemId()){
+                    case R.id.Calendar:
+                        startActivity(new Intent(getApplicationContext(),
+                                CalendarActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.Home:
+                        startActivity(new Intent(getApplicationContext(),
+                                MainActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.Wellbeing:
+                        startActivity(new Intent(getApplicationContext(),
+                                WellbeingActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.Tracker:
+                        return true;
+                    case R.id.Help:
+                        startActivity(new Intent(getApplicationContext(),
+                                HelpActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                }
+                return false;
+            }
+        });
 
         
     }
@@ -41,4 +85,17 @@ public class trackerActivity extends AppCompatActivity {
         itemList.add(new items(R.drawable.weights, "dummbells"));
         itemList.add(new items(R.drawable.water, "fruit and veg"));
     }
+
+    private void onListItemClick(ArrayList<items> l, View v, int position, long id){
+        Toast.makeText(getApplicationContext(), "position => " + position +
+                        " - ListView =>" + l +
+                        " - View => " + v +
+                        " - id => " + id
+                , Toast.LENGTH_LONG).show();
+    }
+
+
+
+
+
 }
