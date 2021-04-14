@@ -14,4 +14,7 @@
     <string name="help">help</string>
     <string name="home">home</string>
     <string name="wellbeing">wellbeing</string>
+    <string name="WELCOME">welcome</string>
+    <string name="fruit">fruit</string>
+    <string name="fruitandveg">fruitandveg</string>
 </resources>
