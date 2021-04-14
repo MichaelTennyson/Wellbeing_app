@@ -4,7 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HelpActivity">
+    tools:context=".activities.HelpActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/video_player"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
@@ -12,6 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@color/white"
+        app:itemRippleColor="@color/black"
         app:itemIconTint="@drawable/home_selector"
         app:itemTextColor="@drawable/home_selector"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -5,14 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".trackerActivity">
+    tools:context=".activities.trackerActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
+    <com.google.android.exoplayer2.video.VideoDecoderGLSurfaceView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </androidx.recyclerview.widget.RecyclerView>
+    </com.google.android.exoplayer2.video.VideoDecoderGLSurfaceView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"

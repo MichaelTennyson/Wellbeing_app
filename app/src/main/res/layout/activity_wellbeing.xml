@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WellbeingActivity">
+    android:id="@+id/layout"
+    tools:context=".activities.WellbeingActivity">
 
     <GridView
         android:id="@+id/Grid"
@@ -23,15 +24,17 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:layout_scrollFlags="scroll|enterAlways"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
 
     </GridView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?android:attr/windowBackground"
+        android:background="@color/white"
         app:itemIconTint="@drawable/home_selector"
         app:itemTextColor="@drawable/home_selector"
         android:id="@+id/bottom_nav"
@@ -43,7 +46,6 @@
         app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/menu_navigation"
         android:layout_alignParentBottom="true"/>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
